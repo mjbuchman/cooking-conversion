@@ -70,6 +70,8 @@ public class ConversionAppUI {
 		textField_1.setColumns(10);
 		textField_1.setBounds(166, 198, 64, 33);
 		frame.getContentPane().add(textField_1);
+		
+		
 	}
 }
 
