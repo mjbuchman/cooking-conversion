@@ -8,6 +8,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JComboBox;
 import javax.swing.JTextField;
+import javax.swing.SwingConstants;
+import javax.swing.JTextArea;
 
 public class ConversionAppUI {
 
@@ -16,9 +18,9 @@ public class ConversionAppUI {
 	private JComboBox comboBox1; 
 	private JComboBox comboBox2;
 	private JTextField textField1;
-	private JTextField textField2;
 	
 	/* Initialize public variables */
+	public static JTextArea textArea;
 	public static String m1, m2;  // Variables to send both measurement labels to the constructor
 	public static int text1, text2;  // Variables to send both measurement numbers to the constructor
 
@@ -61,10 +63,9 @@ public class ConversionAppUI {
 				m1 = (String) comboBox1.getSelectedItem();
 				m2 = (String) comboBox2.getSelectedItem();
 				text1 = Integer.parseInt(textField1.getText());
-				text2 = Integer.parseInt(textField2.getText());
 				
 				/* Create converter object and display conversion */
-				Converter result = new Converter(m1, m2, text1, text2);
+				Converter result = new Converter(m1, m2, text1);
 				result.print();
 			}
 		});
@@ -83,14 +84,14 @@ public class ConversionAppUI {
 		frame.getContentPane().add(comboBox2);
 
 		textField1 = new JTextField();
+		textField1.setHorizontalAlignment(SwingConstants.CENTER);
 		textField1.setBounds(166, 143, 64, 33);
 		frame.getContentPane().add(textField1);
 		textField1.setColumns(10);
 		
-		textField2 = new JTextField();
-		textField2.setBounds(166, 198, 64, 33);
-		frame.getContentPane().add(textField2);
-		textField2.setColumns(10);
+		textArea = new JTextArea();
+		textArea.setBounds(166, 198, 64, 33);
+		frame.getContentPane().add(textArea);
 	}
 	
 	private ArrayList<String> createStringArray() {
@@ -105,18 +106,16 @@ public class ConversionAppUI {
             while((line = bufferedReader.readLine()) != null) {
                 result.add(line);
             }   
-            
+        
             bufferedReader.close();         
         }
         catch(FileNotFoundException ex) {
-            System.out.println(
-                "Unable to open file '" + fileName + "'");                
+            System.out.println("Unable to open file '" + fileName + "'");                
         }
         catch(IOException ex) {
-            System.out.println(
-                "Error reading file '" + fileName + "'");                  
+            System.out.println("Error reading file '" + fileName + "'");                  
         }
-	
+        
 		return result;
 	}
 }
