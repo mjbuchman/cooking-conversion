@@ -1,3 +1,6 @@
+import java.io.*;
+import java.util.*;
+
 public class Converter {
 	
    private String measurement1, measurement2;
@@ -15,6 +18,27 @@ public class Converter {
        numberField = nF;
    }
 	
+   public double getConversionRate(){	   
+       try {
+    	   File file = new File("conversions.txt");
+    	   Scanner sc = new Scanner(file);
+       
+    	   while(sc.hasNextLine()){
+    		  if(sc.next().equals(this.measurement1)) {
+    			  if(sc.next().equals(this.measurement2)){
+    				  return sc.nextDouble();
+    			  }
+    		  }
+    	   }
+           sc.close();         
+       }
+       catch(Exception ex) {
+           ex.printStackTrace();               
+       }
+	   
+	   return 0.0;  // Used for error checking
+   }
+   
    public void print() {
 		System.out.println("Converting " + this.numberField + " " + this.measurement1 + " to " + this.measurement2 + "...");
 	}
