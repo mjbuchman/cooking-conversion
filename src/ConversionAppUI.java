@@ -67,6 +67,7 @@ public class ConversionAppUI {
 				/* Create converter object and display conversion */
 				Converter result = new Converter(m1, m2, text1);
 				result.print();
+				System.out.println(result.getConversionRate());
 			}
 		});
 		btnNewButton.setBounds(228, 279, 137, 33);
