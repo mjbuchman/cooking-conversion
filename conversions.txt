@@ -1,3 +1,4 @@
+Teaspoon(s) Teaspoon(s) 1
 Teaspoon(s) Tablespoon(s) .3333
 Teaspoon(s) Ounce(s) .1667
 Teaspoon(s) Cup(s) .0208
@@ -6,6 +7,7 @@ Teaspoon(s) Quart(s) .0052
 Teaspoon(s) Gallon(s) .0013
 Teaspoon(s) Milliliter(s) 4.929
 Teaspoon(s) Liter(s) .0049
+Tablespoon(s) Tablespoon(s) 1
 Tablespoon(s) Teaspoon(s) 3
 Tablespoon(s) Ounce(s) .5
 Tablespoon(s) Cup(s) .0625
@@ -14,6 +16,7 @@ Tablespoon(s) Quart(s) .0156
 Tablespoon(s) Gallon(s) .0039
 Tablespoon(s) Milliliter(s) 14.79
 Tablespoon(s) Liter(s) .0148
+Ounce(s) Ounce(s) 1
 Ounce(s) Teaspoon(s) 6
 Ounce(s) Tablespoon(s) 2
 Ounce(s) Cup(s) .125
@@ -22,6 +25,7 @@ Ounce(s) Quart(s) .0313
 Ounce(s) Gallon(s) .0078
 Ounce(s) Milliliter(s) 29.57
 Ounce(s) Liter(s) .0296
+Cup(s) Cup(s) 1
 Cup(s) Teaspoon(s) 48
 Cup(s) Tablespoon(s) 16
 Cup(s) Ounce(s) 8
@@ -30,6 +34,7 @@ Cup(s) Quart(s) .25
 Cup(s) Gallon(s) .0625
 Cup(s) Milliliter(s) 236.6
 Cup(s) Liter(s) .2366
+Pint(s) Pint(s) 1
 Pint(s) Teaspoon(s) 95.96
 Pint(s) Tablespoon(s) 32
 Pint(s) Ounce(s) 16
@@ -38,6 +43,7 @@ Pint(s) Quart(s) .5
 Pint(s) Gallon(s) .125
 Pint(s) Milliliter(s) 473
 Pint(s) Liter(s) .473
+Quart(s) Quart(s) 1
 Quart(s) Teaspoon(s) 191.9
 Quart(s) Tablespoon(s) 63.98
 Quart(s) Ounce(s) 32
@@ -46,6 +52,7 @@ Quart(s) Pint(s) 2
 Quart(s) Gallon(s) .25
 Quart(s) Milliliter(s) 946
 Quart(s) Liter(s) .946
+Gallon(s) Gallon(s) 1
 Gallon(s) Teaspoon(s) 768
 Gallon(s) Tablespoon(s) 256
 Gallon(s) Ounce(s) 128
@@ -54,6 +61,7 @@ Gallon(s) Pint(s) 8
 Gallon(s) Quart(s) 4
 Gallon(s) Milliliter(s) 3785
 Gallon(s) Liter(s) 3.785
+Milliliter(s) Milliliter(s) 1
 Milliliter(s) Teaspoon(s) .2029
 Milliliter(s) Tablespoon(s) .0676
 Milliliter(s) Ounce(s) .0338
@@ -62,6 +70,7 @@ Milliliter(s) Pint(s) .0021
 Milliliter(s) Quart(s) .0011
 Milliliter(s) Gallon(s) .0003
 Milliliter(s) Liter(s) .001
+Liter(s) Liter(s) 1
 Liter(s) Teaspoon(s) 202.9
 Liter(s) Tablespoon(s) 67.63
 Liter(s) Ounce(s) 33.81
