@@ -4,7 +4,7 @@ import java.util.*;
 public class Converter {
 	
    private String measurement1, measurement2;
-   private int numberField;
+   private double numberField;
 
    /**
     * Constructor for instantiating a job
@@ -12,7 +12,7 @@ public class Converter {
     * @param measurement2: The label chosen from the second drop down box
     * @param numberField: The number typed into the text box
     */
-   public Converter(String m1, String m2, int nF) {
+   public Converter(String m1, String m2, double nF) {
        measurement1 = m1;
        measurement2 = m2;
        numberField = nF;
