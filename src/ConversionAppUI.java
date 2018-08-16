@@ -72,10 +72,20 @@ public class ConversionAppUI {
 		comboBox1 = new JComboBox(measurements.toArray());
 		comboBox1.setBounds(191, 143, 162, 33);
 		frame.getContentPane().add(comboBox1);
+		comboBox1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				lblAns.setText("");
+			}
+		});
 		
 		comboBox2 = new JComboBox(measurements.toArray());
 		comboBox2.setBounds(191, 198, 162, 33);
 		frame.getContentPane().add(comboBox2);
+		comboBox2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				lblAns.setText("");
+			}
+		});
 
 		textField1 = new JTextField();
 		textField1.setHorizontalAlignment(SwingConstants.CENTER);
