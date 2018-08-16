@@ -1,13 +1,9 @@
-import java.awt.EventQueue;
 import java.util.*;
 import java.io.*;
-
-import javax.swing.JFrame;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class ConversionAppUI {
 
@@ -19,7 +15,7 @@ public class ConversionAppUI {
 	
 	public static JLabel lblAns;
 	public static String m1, m2;  // Variables to send both measurement labels to the constructor
-	public static int text1;  // Variables to send both measurement numbers to the constructor
+	public static double text1;  // Variables to send both measurement numbers to the constructor
 
 	/**
 	 * Launch the application.
@@ -59,7 +55,7 @@ public class ConversionAppUI {
 				/* Gather all user inputs */
 				m1 = (String) comboBox1.getSelectedItem();
 				m2 = (String) comboBox2.getSelectedItem();
-				text1 = Integer.parseInt(textField1.getText());
+				text1 = Double.parseDouble(textField1.getText());
 				
 				/* Create converter object and display conversion */
 				Converter result = new Converter(m1, m2, text1);
