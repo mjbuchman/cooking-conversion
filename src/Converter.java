@@ -26,8 +26,9 @@ public class Converter {
     	   while(sc.hasNextLine()){
     		  if(sc.next().equals(this.measurement1)) {
     			  if(sc.next().equals(this.measurement2)){
+    				  double result = sc.nextDouble();
     				  sc.close();
-    				  return sc.nextDouble();
+    				  return result;
     			  }
     		  }
     	   }
