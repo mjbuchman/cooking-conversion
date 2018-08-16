@@ -25,16 +25,16 @@ public class ConversionAppUI {
 			UIManager.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel"); 
 	    } 
 	    catch (UnsupportedLookAndFeelException e) {
-	       // handle exception
+	    	System.out.println("Unsupported Look and Feel");
 	    }
 	    catch (ClassNotFoundException e) {
-	       // handle exception
+	    	System.out.println("Look and Feel Class Not Found");
 	    }
 	    catch (InstantiationException e) {
-	       // handle exception
+	        System.out.println("Instantiation Exception Thrown");
 	    }
 	    catch (IllegalAccessException e) {
-	       // handle exception
+	    	System.out.println("Illegal Access Exception Thrown");
 	    }
 	    
 		EventQueue.invokeLater(new Runnable() {
@@ -166,8 +166,7 @@ public class ConversionAppUI {
         }
         catch(IOException ex) {
             System.out.println("Error reading file '" + fileName + "'");                  
-        }
-        
+	}
 		return result;
 	}
 }
