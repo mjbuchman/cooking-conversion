@@ -21,6 +21,22 @@ public class ConversionAppUI {
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
+		try {
+			UIManager.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel"); 
+	    } 
+	    catch (UnsupportedLookAndFeelException e) {
+	       // handle exception
+	    }
+	    catch (ClassNotFoundException e) {
+	       // handle exception
+	    }
+	    catch (InstantiationException e) {
+	       // handle exception
+	    }
+	    catch (IllegalAccessException e) {
+	       // handle exception
+	    }
+	    
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -44,8 +60,8 @@ public class ConversionAppUI {
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {	
-		frame = new JFrame();
-		frame.setBounds(100, 100, 637, 508);
+		frame = new JFrame("Cooking Measurement Conversion Tool");
+		frame.setBounds(100, 100, 525, 406);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
@@ -63,14 +79,14 @@ public class ConversionAppUI {
 				lblAns.setText(result.toString(result.getResult(rate)));
 			}
 		});
-		btnNewButton.setBounds(140, 279, 137, 33);
+		btnNewButton.setBounds(116, 256, 137, 33);
 		frame.getContentPane().add(btnNewButton);
 		
 		
 		ArrayList<String> measurements = createStringArray();
 		
 		comboBox1 = new JComboBox(measurements.toArray());
-		comboBox1.setBounds(191, 143, 162, 33);
+		comboBox1.setBounds(167, 120, 162, 33);
 		frame.getContentPane().add(comboBox1);
 		comboBox1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -79,7 +95,7 @@ public class ConversionAppUI {
 		});
 		
 		comboBox2 = new JComboBox(measurements.toArray());
-		comboBox2.setBounds(191, 198, 162, 33);
+		comboBox2.setBounds(167, 175, 162, 33);
 		frame.getContentPane().add(comboBox2);
 		comboBox2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -89,25 +105,25 @@ public class ConversionAppUI {
 
 		textField1 = new JTextField();
 		textField1.setHorizontalAlignment(SwingConstants.CENTER);
-		textField1.setBounds(89, 143, 64, 33);
+		textField1.setBounds(65, 120, 64, 33);
 		frame.getContentPane().add(textField1);
 		textField1.setColumns(10);
 		
 		JLabel lblConvert = new JLabel("Convert");
 		lblConvert.setFont(new Font("Tahoma", Font.BOLD, 16));
 		lblConvert.setHorizontalAlignment(SwingConstants.CENTER);
-		lblConvert.setBounds(171, 79, 70, 43);
+		lblConvert.setBounds(147, 56, 70, 43);
 		frame.getContentPane().add(lblConvert);
 		
 		JLabel lblTo = new JLabel("to");
 		lblTo.setFont(new Font("Tahoma", Font.BOLD, 15));
 		lblTo.setHorizontalAlignment(SwingConstants.CENTER);
-		lblTo.setBounds(95, 207, 46, 14);
+		lblTo.setBounds(71, 184, 46, 14);
 		frame.getContentPane().add(lblTo);
 		
 		JLabel lblResult = new JLabel("Result");
 		lblResult.setFont(new Font("Tahoma", Font.BOLD, 15));
-		lblResult.setBounds(497, 145, 70, 24);
+		lblResult.setBounds(414, 120, 70, 24);
 		frame.getContentPane().add(lblResult);
 		
 		lblAns = new JLabel("");
@@ -115,7 +131,7 @@ public class ConversionAppUI {
 		lblAns.setHorizontalAlignment(SwingConstants.CENTER);
 		lblAns.setBackground(Color.WHITE);
 		lblAns.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		lblAns.setBounds(497, 196, 46, 33);
+		lblAns.setBounds(414, 171, 46, 33);
 		frame.getContentPane().add(lblAns);
 	}
 	
