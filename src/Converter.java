@@ -26,6 +26,7 @@ public class Converter {
     	   while(sc.hasNextLine()){
     		  if(sc.next().equals(this.measurement1)) {
     			  if(sc.next().equals(this.measurement2)){
+    				  sc.close();
     				  return sc.nextDouble();
     			  }
     		  }
@@ -36,14 +37,15 @@ public class Converter {
            ex.printStackTrace();               
        }
 	   
-	   return 0.0;  // Used for error checking
+	   return -1.0;  // Used for error checking
    }
    
    public double getResult(double rate) {
 	   return ((double) Math.round(this.numberField*rate*1000))/1000;
    }
+ 
    
    public String toString(double rate) {
 		return "" + rate;
-	}
+   }
 }
