@@ -87,7 +87,7 @@ public class ConversionAppUI {
 				/* Create converter object and display conversion */
 				Converter result = new Converter(m1, m2, text1);
 				double rate = result.getConversionRate();
-				lblAns.setText(result.toString(result.getResult(rate)));
+				lblAns.setText(result.getResult(rate));
 			}
 		});
 		btnNewButton.setBounds(118, 284, 137, 33);
@@ -166,7 +166,8 @@ public class ConversionAppUI {
         }
         catch(IOException ex) {
             System.out.println("Error reading file '" + fileName + "'");                  
-	}
+        }
+        
 		return result;
 	}
 }
