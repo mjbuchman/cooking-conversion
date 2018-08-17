@@ -6,7 +6,5 @@ A Java based desktop app built with the Swing GUI framework designed to convert 
 ## How to Use
 Clone the [repository](https://github.com/mjbuchman/cooking-conversion) and run the CookingConversion.jar executable file.
 
-## Features
-
 ## Resources Used
 
