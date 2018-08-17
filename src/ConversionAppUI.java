@@ -9,8 +9,8 @@ public class ConversionAppUI {
 
 	/* Initialize private variables */
 	private JFrame frame;
-	private JComboBox comboBox1; 
-	private JComboBox comboBox2;
+	private JComboBox<Object> comboBox1; 
+	private JComboBox<Object> comboBox2;
 	private JTextField textField1;
 	
 	public static JLabel lblAns;
@@ -93,10 +93,9 @@ public class ConversionAppUI {
 		btnNewButton.setBounds(118, 284, 137, 33);
 		frame.getContentPane().add(btnNewButton);
 		
+		Object[] names = createStringArray().toArray();
 		
-		ArrayList<String> measurements = createStringArray();
-		
-		comboBox1 = new JComboBox(measurements.toArray());
+		comboBox1 = new JComboBox<>(names);
 		comboBox1.setBounds(169, 148, 162, 33);
 		frame.getContentPane().add(comboBox1);
 		comboBox1.addActionListener(new ActionListener() {
@@ -105,7 +104,7 @@ public class ConversionAppUI {
 			}
 		});
 		
-		comboBox2 = new JComboBox(measurements.toArray());
+		comboBox2 = new JComboBox<>(names);
 		comboBox2.setBounds(169, 203, 162, 33);
 		frame.getContentPane().add(comboBox2);
 		comboBox2.addActionListener(new ActionListener() {
