@@ -41,8 +41,14 @@ public class Converter {
 	   return -1.0;  // Used for error checking
    }
    
-   public double getResult(double rate) {
-	   return ((double) Math.round(this.numberField*rate*1000))/1000;
+   public String getResult(double rate) {   
+	   double calc = ((double) Math.round(this.numberField*rate*1000))/1000;
+	   String result = toString(calc);
+	   if(calc%1 == .0) {
+		   return result.substring(0, result.length()-2);
+	   }else {
+		   return result;
+	   }
    }
  
    
