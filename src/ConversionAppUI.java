@@ -93,7 +93,7 @@ public class ConversionAppUI {
 		btnNewButton.setBounds(118, 284, 137, 33);
 		frame.getContentPane().add(btnNewButton);
 		
-		Object[] names = createStringArray().toArray();
+		Object[] names = createStringArrayList().toArray();
 		
 		comboBox1 = new JComboBox<>(names);
 		comboBox1.setBounds(169, 148, 162, 33);
@@ -146,7 +146,7 @@ public class ConversionAppUI {
 		frame.getContentPane().add(lblAns);
 	}
 	
-	private ArrayList<String> createStringArray() {
+	private ArrayList<String> createStringArrayList() {
         String fileName = "labels.txt";
         String line = null;
         ArrayList<String> result = new ArrayList<>();
