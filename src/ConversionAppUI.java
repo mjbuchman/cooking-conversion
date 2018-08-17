@@ -133,8 +133,9 @@ public class ConversionAppUI {
 		frame.getContentPane().add(lblTo);
 		
 		JLabel lblResult = new JLabel("Result");
-		lblResult.setFont(new Font("Tahoma", Font.BOLD, 15));
-		lblResult.setBounds(416, 148, 70, 24);
+		lblResult.setHorizontalAlignment(SwingConstants.CENTER);
+		lblResult.setFont(new Font("Tahoma", Font.BOLD, 16));
+		lblResult.setBounds(407, 150, 64, 24);
 		frame.getContentPane().add(lblResult);
 		
 		lblAns = new JLabel("");
@@ -142,7 +143,7 @@ public class ConversionAppUI {
 		lblAns.setHorizontalAlignment(SwingConstants.CENTER);
 		lblAns.setBackground(Color.WHITE);
 		lblAns.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		lblAns.setBounds(416, 199, 46, 33);
+		lblAns.setBounds(407, 203, 64, 33);
 		frame.getContentPane().add(lblAns);
 	}
 	
