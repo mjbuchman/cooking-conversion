@@ -7,7 +7,7 @@ public class Converter {
     private double numberField;  // Number input by user
 
     /**
-    * Constructor for instantiating a job
+    * Constructor for instantiating a converter
     * @param measurement1: The label chosen from the first drop down box
     * @param measurement2: The label chosen from the second drop down box
     * @param numberField: The number typed into the text box
