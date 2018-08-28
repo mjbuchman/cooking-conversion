@@ -22,7 +22,7 @@ public class Converter {
     * Returns the conversion rate between the two specified measurements
     * from a file named conversions.txt
     * 
-    * Uses measuremens from the created Converter object
+    * Uses measurements from the created Converter object
     * 
     * @return The double found after parsing the file
     */
